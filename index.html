@@ -11,11 +11,34 @@
 
 body {
   margin:0;
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Montserrat', sans-serif;
   background:#0a0a0a;
   color:white;
+  scroll-behavior:smooth;
 }
 
+/* NAV */
+nav {
+  position:fixed;
+  width:100%;
+  background:black;
+  display:flex;
+  justify-content:center;
+  z-index:1000;
+}
+
+nav a {
+  padding:15px;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover {
+  color:#ff7a00;
+}
+
+/* HERO */
 .hero {
   height:100vh;
   display:flex;
@@ -25,22 +48,51 @@ body {
   text-align:center;
 }
 
-h1 {
+.hero h1 {
   font-size:60px;
   color:#ff7a00;
 }
 
+/* SECCIONES */
 .section {
-  padding:60px 20px;
-  max-width:900px;
+  padding:80px 20px;
+  max-width:1000px;
   margin:auto;
+}
+
+.section h2 {
+  color:#ff7a00;
+}
+
+/* CARDS */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
 .card {
   background:#111;
   padding:20px;
   border-radius:10px;
-  margin-top:20px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  background:#1a1a1a;
+}
+
+/* STATS */
+.stats {
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+}
+
+.stat h3 {
+  color:#ff7a00;
+  font-size:40px;
 }
 
 </style>
@@ -48,25 +100,82 @@ h1 {
 
 <body>
 
+<!-- NAV -->
+<nav>
+<a href="#intro">Intro</a>
+<a href="#diagnostico">Diagnóstico</a>
+<a href="#ods">ODS</a>
+<a href="#publico">Público</a>
+<a href="#impacto">Impacto</a>
+</nav>
+
+<!-- HERO -->
 <section class="hero">
-  <h1>Haz que tu idea grite</h1>
-  <p>El diseño como herramienta para crear marcas reales</p>
+<h1>Haz que tu idea grite</h1>
+<p>Convierte tu idea en una marca real</p>
 </section>
 
-<section class="section">
-  <h2>Diagnóstico</h2>
+<!-- INTRO -->
+<section id="intro" class="section">
+<h2>Introducción</h2>
+<p>
+KARISMA nace para ayudar a emprendedores a convertir sus ideas en marcas reales,
+conectando creatividad con oportunidades económicas.
+</p>
+</section>
 
-  <div class="card">
-    Falta de conocimiento en branding
-  </div>
+<!-- DIAGNOSTICO -->
+<section id="diagnostico" class="section">
+<h2>Diagnóstico</h2>
 
-  <div class="card">
-    Miedo a emprender
-  </div>
+<div class="grid">
+<div class="card">Falta de conocimiento en branding</div>
+<div class="card">Miedo a emprender</div>
+<div class="card">Falta de herramientas</div>
+</div>
 
-  <div class="card">
-    Falta de herramientas
-  </div>
+</section>
+
+<!-- ODS -->
+<section id="ods" class="section">
+<h2>ODS 8</h2>
+<p>
+Promueve el crecimiento económico y el emprendimiento a través de la creatividad.
+</p>
+</section>
+
+<!-- PUBLICO -->
+<section id="publico" class="section">
+<h2>Público objetivo</h2>
+
+<div class="grid">
+<div class="card">Emprendedores creativos</div>
+<div class="card">Estudiantes</div>
+<div class="card">Diseñadores emergentes</div>
+</div>
+
+</section>
+
+<!-- IMPACTO -->
+<section id="impacto" class="section">
+<h2>Impacto</h2>
+
+<div class="stats">
+<div class="stat">
+<h3>200+</h3>
+<p>Leads</p>
+</div>
+
+<div class="stat">
+<h3>$1.000</h3>
+<p>CPL</p>
+</div>
+
+<div class="stat">
+<h3>Alta</h3>
+<p>Demanda</p>
+</div>
+</div>
 
 </section>
 
