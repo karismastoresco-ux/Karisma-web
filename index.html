@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KARISMA</title>
+<title>KARISMA - Ensayo</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -21,7 +21,7 @@ body {
 nav {
   position:fixed;
   width:100%;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.85);
   backdrop-filter:blur(10px);
   display:flex;
   justify-content:center;
@@ -29,9 +29,10 @@ nav {
 }
 
 nav a {
-  padding:15px;
+  padding:15px 18px;
   color:white;
   text-decoration:none;
+  font-size:14px;
   transition:0.3s;
 }
 
@@ -45,15 +46,16 @@ nav a:hover { color:#ff7a00; }
   justify-content:center;
   align-items:center;
   text-align:center;
-  background:linear-gradient(180deg,#000,#0a0a0a);
+  padding:20px;
 }
 
 .hero h1 {
-  font-size:70px;
+  font-size:60px;
   color:#ff7a00;
 }
 
 .hero p {
+  max-width:600px;
   opacity:0.7;
 }
 
@@ -74,6 +76,7 @@ nav a:hover { color:#ff7a00; }
 
 .section h2 {
   color:#ff7a00;
+  margin-bottom:20px;
 }
 
 /* GRID */
@@ -83,6 +86,7 @@ nav a:hover { color:#ff7a00; }
   gap:20px;
 }
 
+/* CARDS */
 .card {
   background:#111;
   padding:20px;
@@ -95,11 +99,18 @@ nav a:hover { color:#ff7a00; }
   background:#1a1a1a;
 }
 
-/* IMAGEN */
-.img-box img {
+/* IMAGENES */
+.img-box {
   width:100%;
+  height:200px;
+  background:#222;
   border-radius:10px;
-  margin-bottom:10px;
+  margin-bottom:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  font-size:14px;
 }
 
 /* STATS */
@@ -114,6 +125,14 @@ nav a:hover { color:#ff7a00; }
   color:#ff7a00;
 }
 
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:40px;
+  background:black;
+  margin-top:60px;
+}
+
 </style>
 </head>
 
@@ -121,88 +140,100 @@ nav a:hover { color:#ff7a00; }
 
 <nav>
 <a href="#intro">Intro</a>
-<a href="#diagnostico">Diagnóstico</a>
-<a href="#ods">ODS</a>
-<a href="#publico">Público</a>
-<a href="#impacto">Impacto</a>
+<a href="#problema">Problema</a>
+<a href="#diseno">Diseño</a>
+<a href="#teoria">Teoría</a>
+<a href="#etica">Ética</a>
+<a href="#conclusion">Conclusión</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 <h1>Haz que tu idea grite</h1>
-<p>Convierte tu creatividad en una marca real</p>
+<p>El diseño como mediador entre creatividad y crecimiento económico</p>
 </section>
 
+<!-- INTRO -->
 <section id="intro" class="section">
 <h2>Introducción</h2>
-<p>En la actualidad, el emprendimiento se ha convertido en una de las principales alternativas para el desarrollo económico, especialmente en jóvenes y creativos. Sin embargo, existe una realidad que muchas veces pasa desapercibida: no todas las ideas logran convertirse en proyectos reales. Entre la intención de emprender y la ejecución existe una brecha marcada por la falta de herramientas, conocimiento y acompañamiento.
-<br>
-<br>
-Este proyecto parte de esa problemática y propone a KARISMA como una estrategia que busca cerrar esa brecha, permitiendo que personas con ideas puedan transformarlas en marcas reales a través del diseño, la producción y la comunicación visual. Más allá de una propuesta comercial, se plantea como una intervención desde el diseño que impacta directamente en el desarrollo económico de los usuarios.
-<br>
-<br>
-En este sentido, el proyecto se articula con el ODS 8 – Trabajo decente y crecimiento económico, entendiendo el diseño como un medio para generar oportunidades, no solo como una disciplina estética.</p>
+<p>
+En la actualidad, muchas ideas creativas no logran convertirse en proyectos reales.
+KARISMA surge como una estrategia que busca cerrar esta brecha mediante el diseño,
+permitiendo que emprendedores transformen sus ideas en marcas reales.
+</p>
+
+<div class="img-box">Imagen introducción</div>
 </section>
 
-<section id="diagnostico" class="section">
-<h2>Diagnóstico</h2>
-  <p>Vivimos en una cultura donde la imagen lo es todo. Las marcas no solo venden productos, venden identidad, estilo y pertenencia. Sin embargo, no todas las personas tienen acceso a construir esa identidad de manera profesional.
-
-En contextos universitarios y creativos, es común encontrar personas con ideas de marca, conceptos o propuestas visuales, pero que no logran desarrollarlas. Esto ocurre por varias razones:</p>
+<!-- PROBLEMA -->
+<section id="problema" class="section">
+<h2>Contextualización del problema</h2>
 
 <div class="grid">
 
 <div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-</div>
-Falta de conocimiento en branding
+<div class="img-box">Imagen contexto</div>
+<p>Falta de conocimiento en branding y comunicación visual.</p>
 </div>
 
 <div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
-</div>
-Miedo a emprender
+<div class="img-box">Imagen usuario</div>
+<p>Miedo a emprender y falta de acompañamiento.</p>
 </div>
 
 <div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<div class="img-box">Imagen mercado</div>
+<p>Desconexión entre ideas y ejecución real.</p>
 </div>
-Falta de herramientas
+
 </div>
-  </div>
-<p>Además, el entorno digital exige cada vez más calidad visual, lo que genera una barrera aún mayor para quienes no tienen acceso a herramientas de diseño o producción.</p>
 
 </section>
 
-<section id="ods" class="section">
-<h2>ODS y justificación</h2>
-<p>El proyecto se conecta directamente con el ODS 8 – Trabajo decente y crecimiento económico, promovido por la Organización de las Naciones Unidas, ya que busca fomentar el emprendimiento como una vía de desarrollo económico sostenible.
+<!-- DISEÑO -->
+<section id="diseno" class="section">
+<h2>Diseño como investigación-creación</h2>
 
-KARISMA permite que personas sin experiencia previa puedan:</p>
-  <li>Crear su marca</li>
-  <li>Comunicar su propuesta</li>
-  <li>Desarrollar productos Reales</li>
-  <li>Generar Ingresos</li>
-  <p>Esto reduce las barreras de entrada al emprendimiento y fortalece la economía creativa.
+<p>
+El diseño permitió comprender el problema desde la práctica, generando soluciones
+como kits de marca, mockups y producción bajo demanda.
+</p>
 
-No se trata únicamente de diseñar camisetas, sino de activar procesos que conviertan la creatividad en oportunidades económicas reales</p>
+<div class="img-box">Imagen proceso creativo</div>
+
 </section>
 
-<section id="publico" class="section">
-<h2>Público</h2>
+<!-- TEORIA -->
+<section id="teoria" class="section">
+<h2>Articulación teoría - práctica</h2>
+
+<p>
+El proyecto se fundamenta en el diseño como lenguaje social,
+capaz de construir identidad y generar valor económico.
+</p>
 
 <div class="grid">
-<div class="card">Emprendedores <br> <p>Personas con ideas claras pero sin herramientas para ejecutarlas. Buscan guía y acompañamiento.</p> </div>
- 
-<div class="card">Estudiantes <br><p>Jóvenes en proceso de exploración que quieren expresarse o iniciar proyectos propios.</p> </div>
-<div class="card">Diseñadores <br> <p>Personas con habilidades creativas que aún no han logrado monetizar su talento.</p></div>
+<div class="card">Diseño como comunicación</div>
+<div class="card">Economía creativa</div>
+<div class="card">Narrativa visual</div>
 </div>
 
 </section>
 
-<section id="impacto" class="section">
+<!-- ETICA -->
+<section id="etica" class="section">
+<h2>Reflexión ética</h2>
+
+<p>
+El proyecto promueve la autoría, la producción responsable y el emprendimiento consciente.
+</p>
+
+<div class="img-box">Imagen impacto social</div>
+
+</section>
+
+<!-- IMPACTO -->
+<section class="section">
 <h2>Impacto</h2>
 
 <div class="stats">
@@ -218,27 +249,41 @@ No se trata únicamente de diseñar camisetas, sino de activar procesos que conv
 
 <div class="stat">
 <h3>Alta</h3>
-<p>Demanda</p>
+<p>Interacción</p>
 </div>
 </div>
 
 </section>
 
-<script>
+<!-- CONCLUSION -->
+<section id="conclusion" class="section">
+<h2>Conclusión</h2>
 
-/* ANIMACIONES SCROLL */
+<p>
+El diseño se convierte en una herramienta de transformación real,
+permitiendo que las ideas se conviertan en oportunidades económicas.
+</p>
+
+<div class="img-box">Imagen final</div>
+
+</section>
+
+<footer>
+<p>KARISMA © 2026 | Proyecto Integra</p>
+</footer>
+
+<script>
 const sections = document.querySelectorAll('.section');
 
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('visible');
-    }
-  });
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+}
+});
 });
 
 sections.forEach(sec => observer.observe(sec));
-
 </script>
 
 </body>
